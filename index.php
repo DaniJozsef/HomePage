@@ -1,7 +1,6 @@
 <?php
 require_once ('phplib/init.php');
 include ('style/php/head.php');
-echo"árvíztűrő ütvefúrógép";
 
 //NICE URL WRITE
 $subdir  = substr(realpath(dirname(__FILE__)), strlen(realpath($_SERVER['DOCUMENT_ROOT'])));
