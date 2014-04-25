@@ -1,5 +1,4 @@
 <?php
-//Test
 require_once ('phplib/init.php');
 include ('style/php/head.php');
 
