@@ -1,0 +1,14 @@
+LANG_HASH_STRING_REQUIRED = 'Kérem adjon meg kódolható/dekódolható szöveget!';
+LANG_CONNECT_FAILED = 'Nem sikerült kapcsolódni a szerverhez!';
+LANG_ERROR = 'Hiba';
+LANG_DECODE_SUCCESS = 'Sikeres HASH visszafejtés!';
+LANG_DECODE_FAILED = 'A visszafejtés sikertelen!';
+LANG_ADDBOOKMARK_NOT_WORK_IN_CHROME = 'Ez a funkció nem működik a Google Chrome és Firefox böngészőkben! Kattintson a böngészősáv végén lévő csillag szimbólumra, vagy használja a CTRL + D (Mac: Command + D) billentyűkombinációkat.';
+LANG_ADDBOOKMARK_NOT_WORK = 'Böngészője nem támogatja a könyvjelző hozzáadás funkciót!';
+LANG_BTN_OK = 'OK';
+LANG_LOADING = 'Betöltés';
+LANG_MESSAGE_SEND_OK = 'Üzenet elküldve!<br />Köszönjük!';
+LANG_MESSAGEFORM_ERROR_NOVALID_EMAIL = 'Helytelen email cím<br />';
+LANG_MESSAGEFORM_ERROR_NAME_LEN = 'Névhez legalább két karaktert várok!<br />';
+LANG_MESSAGEFORM_ERROR_TEXT_LEN = 'Üzenetnek legalább 10 karaktert várok!<br />';
+LANG_MESSAGEFORM_ERROR_NOCAPTCHA = 'Nem adott meg ellenőrző kódot<br />';

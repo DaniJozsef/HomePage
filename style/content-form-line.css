@@ -1,0 +1,116 @@
+.content-form-line{
+  border: 0px solid rgb(200,200,200);
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  background-color: rgb(200,200,200);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.element-form-line{
+  padding: 15px 15px 15px 10px;
+  font-size: 18px;
+}
+
+.element-form-line-text{
+  padding: 15px 15px 15px 10px;
+  font-size: 14px;
+}
+
+.element-form-line textarea{
+  margin-top: 10px;
+  font-size: 16px;
+  width: 98%;
+  height: 200px;
+  padding: 7px;
+  text-shadow: 0px 1px 0px rgba(252,252,252,0.6);
+	border: 1px solid rgb(210,210,210);
+	background-color: #ffffff;
+  outline: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 16px !important;
+  font-style: italic;
+  color: rgb(80,80,80);
+}
+
+.element-form-line textarea:hover{
+	border: 1px solid rgb(180,180,180);
+	background-color: rgb(250,250,250);
+}
+
+.element-form-line textarea:focus{
+	border: 1px solid rgb(100,100,100);
+	background-color: rgb(232,232,232);
+}
+
+.element-form-line select{
+  color: rgb(80,80,80);
+  font-size: 14px;
+  width: 320px;
+  border: 1px solid rgb(210,210,210);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  height: 32px;
+  outline: none;
+}
+
+.element-form-line select:hover{
+  border: 1px solid rgb(180,180,180);
+  background-color: rgb(250,250,250);
+}
+
+.element-form-line select:focus{
+	border: 1px solid rgb(100,100,100);
+	background-color: rgb(232,232,232);
+}
+
+.element-form-line  textarea:disabled,
+.element-form-line select:disabled,
+.hash-input:disabled{
+  background: rgb(253,253,253) !important;
+  border-color: rgb(250,250,250) !important;
+  color: rgb(230,230,230) !important;
+}
+
+@media only screen and (max-width: 800px){
+  .element-form-line select{
+    width: 218px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .element-form-line select{
+    width: 418px;
+  }
+  .element-form-line{
+    padding: 5px 5px 5px 5px;
+    font-size: 18px;
+  }
+  .element-form-line textarea{
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .element-form-line select{
+    width: 218px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .element-form-line select{
+    width: 148px;
+  }
+}
+
+.element-text{
+  margin-top: 5px;
+}
+
+#newmessage{
+  display: none;
+}

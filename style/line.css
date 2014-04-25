@@ -1,0 +1,107 @@
+/*LINE*/
+.red-line {
+  width: 100%;
+  background: rgb(255,206,206);
+  color: rgb(10,10,10);
+  border: 0;
+  border-top:  1px solid #d0d0d0;
+  border-bottom: 1px solid #111111;
+  -webkit-box-shadow: inset 0px 40px 90px rgba(183,0,28, 0.1);
+  -moz-box-shadow: inset 0px 40px 90px rgba(183,0,28, 0.1);
+  box-shadow: inset 0px 40px 90px rgba(183,0,28, 0.1);
+  padding: 12px 0;
+}
+
+.white-line {
+  width: 100%;
+  background: rgb(250,250,250);
+  color: rgb(10,10,10);
+  border: 0;
+  border-top:  1px solid #d0d0d0;
+  border-bottom: 1px solid #111111;
+  -webkit-box-shadow: inset 0px 40px 90px rgba(200,200,200, 0.3);
+  -moz-box-shadow: inset 0px 40px 90px rgba(200,200,200, 0.3);
+  box-shadow: inset 0px 40px 90px rgba(200,200,200, 0.3);
+  padding: 12px 0;
+}
+
+.blue-line {
+  width: 100%;
+  background: rgb(152,219,250);
+  color: rgb(10,10,10);
+  border: 0;
+  border-top:  1px solid #d0d0d0;
+  border-bottom: 1px solid #111111;
+  -webkit-box-shadow: inset 0px 40px 90px rgba(200,200,200, 0.3);
+  -moz-box-shadow: inset 0px 40px 90px rgba(200,200,200, 0.3);
+  box-shadow: inset 0px 40px 90px rgba(200,200,200, 0.3);
+  padding: 12px 0;
+}
+
+.blue-line-link:active,
+.blue-line-link:visited,
+.blue-line-link:link,
+.green-line-link:active,
+.green-line-link:visited,
+.green-line-link:link,
+#newmessage a:link,
+#newmessage a:active,
+#newmessage a:visited{
+  text-shadow: 0px 1px 0px rgba(250,250,250, 0.6);
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  color: rgb(33,66,99);
+}
+
+.blue-line-link:hover,
+.green-line-link:hover,
+#newmessage a:hover{
+  color: rgb(240,70,80);
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.green-line {
+  width: 100%;
+  background: rgb(184,250,152);
+  color: rgb(10,10,10);
+  border: 0;
+  border-top:  1px solid #d0d0d0;
+  border-bottom: 1px solid #111111;
+  -webkit-box-shadow: inset 0px 40px 90px rgba(200,200,200, 0.3);
+  -moz-box-shadow: inset 0px 40px 90px rgba(200,200,200, 0.3);
+  box-shadow: inset 0px 40px 90px rgba(200,200,200, 0.3);
+  padding: 12px 0;
+}
+
+.green-title{
+  font-family: "Verdana", Arial;
+  text-shadow: 0px 1px 0px rgba(250,250,250, 0.8);
+  color: rgb(80,80,80);
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+#loading{
+  overflow: hidden;
+  background: url('img/binocular_loading.gif') no-repeat center center;
+  z-index: 100000;
+  text-align: center;
+  vertical-align: center;
+}
+
+#loading .text{
+  font-size: 20px;
+  padding-top: 70px;
+  font-weight: bold;
+  color: rgb(80,80,80);
+  position: relative;
+  top: 60%;
+}

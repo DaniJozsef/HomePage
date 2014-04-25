@@ -1,0 +1,85 @@
+.input-required-error{
+  border: 1px solid rgb(240,70,80) !important;
+}
+
+.hash-result-line-failed{
+  font-weight: bold;
+	background: rgb(193,28,28) url('img/error.png') no-repeat 20px center;
+	color: rgb(242,242,242);
+	text-shadow: 0 1px 0 #112235;
+	border: 1px solid rgba(10,10,10,0.6);
+  -webkit-box-shadow: 1px 1px 1px rgba(234,234,234,0.3);
+  -moz-box-shadow: 1px 1px 1px rgba(234,234,234,0.3);
+  box-shadow: 1px 1px 1px rgba(234,234,234,0.3);
+	width: 80%;
+	margin: auto;
+	margin-bottom: 10px;
+	padding: 15px;
+	padding-left: 60px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.hash-result-line-success{
+  font-weight: bold;
+	background: rgb(56,168,23) url('img/success.png') no-repeat 20px center;
+	color: rgb(242,242,242);
+	text-shadow: 0 1px 0 #112235;
+	border: 1px solid rgba(10,10,10,0.6);
+  -webkit-box-shadow: 1px 1px 1px rgba(234,234,234,0.3);
+  -moz-box-shadow: 1px 1px 1px rgba(234,234,234,0.3);
+  box-shadow: 1px 1px 1px rgba(234,234,234,0.3);
+	width: 80%;
+	margin: auto;
+	margin-bottom: 10px;
+	padding: 15px;
+	padding-left: 60px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.closebutton{
+  text-align: center;
+  margin-top: 30px;
+}
+.closebutton span{
+  padding: 10px 10px 10px 10px;
+  border: 1px solid rgb(200,200,200);
+  background-color: rgb(232,232,232);
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(80,80,80);
+  text-shadow: 0px 1px 0px rgba(252,252,252,0.6);
+  cursor: hand;
+  cursor: pointer;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.closebutton span:hover{
+  border: 1px solid rgb(100,100,100);
+  background-color: rgb(200,200,200);
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -ms-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
+@media only screen and (max-width: 450px) {
+  #hash-result{
+    font-size: 10px;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  .hash-result-line-success,
+  .hash-result-line-failed{
+    font-size: 12px;
+    padding: 10px 0px 10px 30px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  #hash-result{
+    font-size: 8px;
+  }
+}

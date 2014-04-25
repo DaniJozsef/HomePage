@@ -1,0 +1,162 @@
+/*box*/
+.box{
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  background-color: transparent;
+  display: inline-block;
+  border: 0;
+}
+
+.box-four{
+  width: 25%;
+  float: left;
+  display: block;
+}
+
+.box .container{
+  text-shadow: 0px 1px 0px rgba(250,250,250, 0.6);
+  text-align: left;
+  max-width: 900px;
+  min-width: 500px;
+  color: rgb(40,40,40);
+  display: block;
+  margin: auto;
+}
+
+.box .container .element{
+  border: 0px solid #c0c0c0;
+  display: block;
+}
+
+.box-center{
+  margin: auto;
+  text-align: center;
+}
+
+.element-padding{
+  padding: 10px;
+  margin: 15px;
+}
+
+.element-padding-small{
+  padding: 10px;
+  margin: 5px;
+}
+
+.box-two{
+  width: 50%;
+  float: left;
+  display: block;
+}
+
+.box-three{
+  width: 33%;
+  float: left;
+  display: block;
+}
+
+.box .container .element img{
+  float: left;
+}
+
+.box-title{
+  text-shadow: 0px 1px 0px rgba(250,250,250, 0.8);
+  color: rgb(82,81,81);
+  font-weight: bold;
+  font-size: 16px;
+  float: right;
+  text-align: right;
+}
+
+.boxtext{
+  text-shadow: 0px 1px 0px rgba(255,255,255, 0.9);
+  font-weight: normal;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 10px;
+  color: rgb(82,81,81);
+}
+
+.boxtext-medium{
+  text-shadow: 0px 1px 0px rgba(255,255,255, 0.7);
+  font-weight: normal;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: rgb(82,81,81);
+}
+
+.box .subcontainer{
+  border: 0;
+  text-shadow: 0px 1px 0px rgba(250,250,250, 0.6);
+  text-align: left;
+  width: 100%;
+  color: rgb(40,40,40);
+  display: block;
+  margin: auto;
+}
+.box .subcontainer .box-two .element,
+.box .subcontainer .box-three .element{
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.box .subtwo-link:active,
+.box .subtwo-link:visited,
+.box .subtwo-link:link{
+  text-shadow: 0px 1px 0px rgba(250,250,250, 0.6);
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  color: rgb(240,70,80);
+}
+
+.box .subtwo-link:hover{
+  color: rgb(33,66,99);
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+@media only screen and (max-width: 700px) {
+  .box .container{
+    width: 100%;
+    min-width: 100%;
+    display: inline-block;
+  }
+  
+  .box-four{
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+  }
+  
+  .box-three{
+    width: 100%;
+    float: left;
+    display: block;
+  }
+  
+  .box-two{
+    width: 100%;
+    float: left;
+    display: block;
+  }
+  
+  .box-twoclear{
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .box-four{
+    width: 100%;
+    clear: both;
+    float: none;
+    display: block;
+  }
+}

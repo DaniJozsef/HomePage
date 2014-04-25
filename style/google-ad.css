@@ -1,0 +1,24 @@
+/*GOOGLE AD*/
+.dajo-hu{
+  width: 320px;
+  height: 50px;
+  display: inline-block;
+}
+@media(min-width: 300px){
+  .dajo-hu{
+    width: 268px;
+    height: 40px;
+  }
+}
+@media(min-width: 500px){
+  .dajo-hu{
+    width: 468px;
+    height: 60px;
+  }
+}
+@media(min-width: 800px){
+  .dajo-hu{
+    width: 728px;
+    height: 90px;
+  }
+}

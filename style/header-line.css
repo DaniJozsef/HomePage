@@ -1,0 +1,39 @@
+/*HEADER-LINE*/
+.header-line{
+  text-align: right;
+  vertical-align: center;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #ffffff;
+  background-image: url('img/diagonal_gray_bg.png');
+  display: inline-block;
+  border: 0;
+  border-bottom: 1px solid #111111;
+}
+.header-line .header-right{
+  text-align: right;
+  margin: 0 auto;
+  max-width: 900px;
+  min-width: 500px;
+}
+
+.logotitle{
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(80,80,80);
+}
+
+.basecolor{
+  color: rgb(240,70,80);
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 520px) {
+  .header-line .header-right{
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .header-line .header-right img{
+    width: 90px;
+  }
+}
