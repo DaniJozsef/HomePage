@@ -5,6 +5,7 @@
 //require class/phpmailer/class.phpmailer.php
 //require class/db.class.php
 
+date_default_timezone_set(TIMEZONE);
 
 $GP = array();
 if($_POST){
@@ -257,5 +258,10 @@ function GetBrowser(){
     }
   }
   return $BrowserData;
+}
+
+function MakeTimestamp($Hour, $Min, $Sec, $Month, $Day, $Year, $DST=-1){
+  $TimeStamp = mktime($Hour, $Min, $Sec, $Month, $Day, $Year, $DST);
+  return $TimeStamp;
 }
 ?>

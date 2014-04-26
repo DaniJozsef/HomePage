@@ -1,0 +1,139 @@
+/*TIMESTAMP*/
+#timestampEncoderResult{
+  color: rgb(252,252,252);
+  font-size: 28px;
+  text-shadow: 0px -1px 0px rgba(10,10,10,0.75);
+}
+
+#timestampDecoderResult{
+  color: rgb(10,10,10);
+  font-size: 24px;
+  text-shadow: 0px -1px 0px rgba(252,252,252,0.75);
+}
+
+.tstamp-button{
+  text-shadow: 0px 1px 0px rgba(252,252,252,0.6);
+	border: 1px solid rgb(210,210,210);
+	background-color: rgb(200,200,200);
+  color: rgb(80,80,80);
+  padding: 5px 30px 5px 30px;
+  font-size: 15px;
+  font-family: "verdana", arial;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  cursor: hand;
+  cursor: pointer;
+  height: 32px;
+}
+
+.tstamp-input{
+  padding: 7px;
+  text-shadow: 0px 1px 0px rgba(252,252,252,0.6);
+  border: 1px solid rgb(210,210,210);
+  background-color: #ffffff;
+  width: 270px;
+  height: 16px;
+  outline: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 16px !important;
+  font-style: italic;
+  color: rgb(80,80,80);
+  margin-bottom: 15px;
+}
+
+.tstamp-input:hover{
+  border: 1px solid rgb(180,180,180);
+  background-color: rgb(250,250,250);
+}
+
+.tstamp-input:focus{
+  border: 1px solid rgb(100,100,100);
+  background-color: rgb(232,232,232);
+}
+
+.timestamp-button{
+  text-shadow: 0px 1px 0px rgba(252,252,252,0.6);
+	border: 1px solid rgb(210,210,210);
+	background-color: rgb(200,200,200);
+  color: rgb(80,80,80);
+  padding: 5px 30px 5px 30px;
+  font-size: 15px;
+  font-family: "verdana", arial;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  cursor: hand;
+  cursor: pointer;
+}
+
+.timestamp-button:hover{
+	border: 1px solid rgb(100,100,100);
+	background-color: rgb(232,232,232);
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -ms-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
+.timestamp select{
+  color: rgb(80,80,80);
+  font-size: 18px;
+  width: 90px;
+  border: 1px solid rgb(210,210,210);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  height: 35px;
+  outline: none;
+}
+
+.timestamp select:hover{
+  border: 1px solid rgb(180,180,180);
+  background-color: rgb(250,250,250);
+}
+
+.timestamp select:focus{
+	border: 1px solid rgb(100,100,100);
+	background-color: rgb(232,232,232);
+}
+
+@media only screen and (max-width: 900px){
+  .tstamp-input{
+    width: 230px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .tstamp-input{
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .timestamp-button{
+    padding: 5px 5px 5px 5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .timestamp-button{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .tstamp-button{
+    padding: 5px 5px 5px 5px;
+  }
+  .tstamp-input{
+    width: 180px;
+  }
+  .timestamp-button{
+    font-size: 11px;
+    padding: 5px 3px 5px 3px;
+  }
+}
