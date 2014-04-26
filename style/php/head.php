@@ -10,6 +10,7 @@
     <script type="text/javascript" language="javascript" src="/jslib/jquery1.11.0.min.js"></script>
     <script type="text/javascript" language="javascript" src="/jslib/define.js"></script>
     <script type="text/javascript" language="javascript" src="/jslib/lang_hu.js"></script>
+    <script type="text/javascript" language="javascript" src="/jslib/functions.js"></script>
     <script type="text/javascript" language="javascript" src="/jslib/app.js"></script>
     <script type="text/javascript" language="javascript" src="/jslib/jquery.fancybox.js?v=2.1.5"></script>
     <title>.:DAJO.HU:.</title>

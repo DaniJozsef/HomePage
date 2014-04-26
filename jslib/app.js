@@ -1,5 +1,18 @@
 $(function() {
-
+  
+  //LOCAL DATE
+  date = new Date;
+  if($("#LocalTimeZone")){
+    $("#LocalTimeZone").html(dateFormat("timeZone"));
+  }
+  if($("#LocalDateTime")){
+    var DateTime = dateFormat("date") + '<br />' + dateFormat("time");
+    $("#LocalDateTime").html(DateTime);
+  }
+  if($("#NameDay")){
+    $("#NameDay").html(dateFormat("nameDay") + ' ' + LANG_NAMEDAY);
+  }
+  
   //FANCYBOX WINDOW
   var fancyboxOpen = function(alertText, type){
     var type = type ? type : 'warning';

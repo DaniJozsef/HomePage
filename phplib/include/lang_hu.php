@@ -39,5 +39,10 @@ $Lang = array(
   'MobileTablet' => 'Táblagép',
   'MobilePhone' => 'Telefon',
   'MobileComputer' => 'Számítógép',
+  'LocalTimeZone' => 'Helyi időzóna',
+  'LocalDateTime' => 'Helyi dátum és idő',
+  'OS' => 'Operációs rendszer',
+  'OSNotDetect' => 'Nem lehet meghatározni!',
+  'Version' => 'Verzió',
 );
 ?>
