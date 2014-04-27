@@ -10,6 +10,12 @@ include_once dirname(__FILE__).'/../init.php';
         case 'message':
           print json_encode(AjaxMessage());
           break;
+        case 'TimestampDecoder':
+          print json_encode(TimestampDecoder());
+          break;
+        case 'TimestampEncoder':
+          print json_encode(TimestampEncoder());
+          break;
       }
     }
 
@@ -150,6 +156,41 @@ function AjaxMessage(){
           'ErrorStatus' => $ErrorStatus,
           'ErrorMessage' => $ErrorMessage
          );
+}
+
+function TimestampDecoder(){
+  global $GP, $Lang;
+  $ErrorStatus = 0;
+  $ErrorMessage = '';
+  $TimeStamp = intval($GP['TimeStamp']);
+  if(!$TimeStamp){
+    $ErrorStatus = 1;
+    $ErrorMessage = $Lang['NumberFailed'];
+  }
+  $Json = array(
+    'date' => DateFormat($TimeStamp),
+    'ErrorStatus' => $ErrorStatus,
+    'ErrorMessage' => $ErrorMessage
+  );
+  return $Json;
+}
+
+function TimestampEncoder(){
+  global $GP, $Lang;
+  $ErrorStatus = 0;
+  $ErrorMessage = '';
+  $Hour = intval($GP['Hour']);
+  $Min = intval($GP['Min']);
+  $Sec = intval($GP['Sec']);
+  $Month = intval($GP['Month']);
+  $Day = intval($GP['Day']);
+  $Year = intval($GP['Year']);
+  $Json = array(
+    'timestamp' => MakeTimestamp($Hour, $Min, $Sec, $Month, $Day, $Year),
+    'ErrorStatus' => $ErrorStatus,
+    'ErrorMessage' => $ErrorMessage
+  );
+  return $Json;
 }
 
 ?>

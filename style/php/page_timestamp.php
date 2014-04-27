@@ -10,7 +10,7 @@
             <input type="button" class="tstamp-button" value="<?php __('TimestampDecode'); ?>" id="timestampDecoder" />
           </div>
           <div class="box-three">
-            <div id="timestampDecoderResult">2014.04.14 - 23:44:15</div>
+            <div id="timestampDecoderResult"></div>
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@
             <div class="element timestamp">
               <select name="year">
                 <?php 
-                  for($YearOption=1990; $YearOption<2040; $YearOption++){
+                  for($YearOption=1990; $YearOption<2038; $YearOption++){
                     $YearSelected =  ($YearOption == date('Y')) ? 'selected="selected" ' : '';
                     print '<option ' . $YearSelected . 'value="' . $YearOption . '">' . $YearOption . "</option>";
                   }
@@ -120,7 +120,7 @@
             <div class="container">
               <div class="box-two">
                 <div class="element element-padding">
-                  <div id="timestampEncoderResult">1234567890</div>
+                  <div id="timestampEncoderResult"></div>
                 </div>
               </div>
               <div class="box-two box-twoclear right">

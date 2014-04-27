@@ -30,6 +30,7 @@ LANG_MESSAGEFORM_ERROR_NOCAPTCHA = 'Nem adott meg ellenőrző kódot<br />';
 LANG_NAMEDAY = 'napja';
 LANG_BISSEXTILEYES = 'Igen, ez szökőév';
 LANG_BISSEXTILENO = 'Nem, ez nem szökőév';
+LANG_TIMESTAMP_NUM_REQUIRED = 'Kérem adjon meg értelmezhető számot';
 
 var LANG_NAMEDAYARRAY = function(Year, Month, Day){
   if (Month == 1){

@@ -235,5 +235,90 @@ $(function() {
     }
   });
   
+  //TIMESTAMP DECODE
+  $("#timestampDecoder").click(function(){
+    TimestampInput = $("input[name='tstamp']");
+    if(TimestampInput.val().length == 0){
+      fancyboxOpen(LANG_TIMESTAMP_NUM_REQUIRED);
+      TimestampInput.addClass("input-required-error");
+      TimestampInput.focus();
+    }else{
+      $.ajax({
+        type: "POST",
+        url: AJAX_PATH + "ajax" + AJAX_EXT + '/TimestampDecoder',
+        data: { 
+          TimeStamp: TimestampInput.val()
+        },
+        beforeSend: function( xhr ) {
+          xhr.overrideMimeType( "text/plain; charset=x-user-defined" );
+          fancyboxLoader();
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+          $("#loading").hide("slow");
+          $.fancybox.close(true);
+          fancyboxOpen(LANG_ERROR + ': ' + XMLHttpRequest.status + '/' + XMLHttpRequest.statusText + '/n' + LANG_CONNECT_FAILED);
+          TimestampInput.addClass("input-required-error");
+        },
+        success: function(){
+          TimestampInput.removeClass("input-required-error");
+        }       
+      })
+      .done(function( responseData ) {
+        var datas = JSON.parse(responseData);
+        if(datas.ErrorStatus == 1){
+          fancyboxOpen('<ul><li>' + datas.ErrorMessage + '</li></ul>', 'error');
+          TimestampInput.addClass("input-required-error");
+          TimestampInput.focus();
+        }else{
+          $("#timestampDecoderResult").html( datas.date );
+          $('#loading').hide("slow");
+          $.fancybox.close(true);
+          $("#timestampDecoderResult").show();
+        }
+      });
+    }
+  });
+  //TIMESTAMP ENCODE
+  $("#timestampEncoder").click(function(){
+    if(!parseInt($("select[name='month']").val()) || !parseInt($("select[name='day']").val()) || !parseInt($("select[name='year']").val())){
+      fancyboxOpen(LANG_TIMESTAMP_NUM_REQUIRED);
+    }else{
+      $.ajax({
+        type: "POST",
+        url: AJAX_PATH + "ajax" + AJAX_EXT + '/TimestampEncoder',
+        data: { 
+          Hour: $("select[name='hour']").val(),
+          Min: $("select[name='min']").val(),
+          Sec: $("select[name='sec']").val(),
+          Month: $("select[name='month']").val(),
+          Day: $("select[name='day']").val(),
+          Year: $("select[name='year']").val()
+        },
+        beforeSend: function( xhr ) {
+          xhr.overrideMimeType( "text/plain; charset=x-user-defined" );
+          fancyboxLoader();
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+          $("#loading").hide("slow");
+          $.fancybox.close(true);
+          fancyboxOpen(LANG_ERROR + ': ' + XMLHttpRequest.status + '/' + XMLHttpRequest.statusText + '/n' + LANG_CONNECT_FAILED);
+        },
+        success: function(){
+          
+        }       
+      })
+      .done(function( responseData ) {
+        var datas = JSON.parse(responseData);
+        if(datas.ErrorStatus == 1){
+          fancyboxOpen('<ul><li>' + datas.ErrorMessage + '</li></ul>', 'error');
+        }else{
+          $("#timestampEncoderResult").html( datas.timestamp );
+          $('#loading').hide("slow");
+          $.fancybox.close(true);
+          $("#timestampEncoderResult").show();
+        }
+      });
+    }
+  });
     
 })

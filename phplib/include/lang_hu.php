@@ -60,5 +60,6 @@ $Lang = array(
   'BissextileTooltip' => 'Annus bissextilis: Minden néggyel osztható év, kivéve a százzal is oszthatókat. Szökőévek viszont a 400-zal osztható évek.',
   'TimestampDecoder' => 'Timestamp Decoder',
   'TimestampEncoder' => 'Timestamp Encoder',
+  'NumberFailed' => 'Kérem adjon meg értelmezhető számot',
 );
 ?>
