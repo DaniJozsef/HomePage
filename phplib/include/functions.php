@@ -59,9 +59,9 @@ function DateFormat($Date=false){
       $Date = time();
     }
     if($Language == 'hu'){
-      return date("Y.m.d H:i:s", $Date);
+      return date(ISO_DATETIME, $Date);
     }else{
-      return date("d.m.Y H:i:s", $Date);
+      return date(ISO_DATETIME2, $Date);
     }
 }
 
