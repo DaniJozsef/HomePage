@@ -6,6 +6,7 @@ $Lang = array(
   'tiresize' => 'gumimeret',
   'TireSize' => 'Autógumi méret átváltó',
   'timestamp' => 'idobelyegkonverter',
+  'Name' => 'Név',
   'Email' => 'E-mail cím',
   'Phone' => 'Telefonszám',
   'DeveloperNullPoint' => 'Fejlesztői nullpont',
