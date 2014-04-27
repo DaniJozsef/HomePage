@@ -81,7 +81,7 @@
               Mantis Bug Tracker
             </a>
             <br />
-            <a href="/kapcsolat">
+            <a href="/<?php __('connect'); ?>">
               <img class="footer-small-icons" src="style/icons/gray/16x16/email.png" />
               <?php __('Connect'); ?>
             </a>

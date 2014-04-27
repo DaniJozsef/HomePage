@@ -1,54 +1,13 @@
-    <div class="white-line">
-      <!-- +BOX FOUR-->
-      <div class="box">
-      <span class="green-title">Fejlesztői nullpont</span>
-        <div class="container">
-          <div class="box-four">
-            <div class="element">
-              TERMÉSZETVÉDELEM
-            </div>
-            <div class="element">
-              tvm leírása
-            </div>
-          </div>
-          <div class="box-four">
-            <div class="element">
-              HASH tool
-            </div>
-            <div class="element">
-              Hash Tool leírása
-            </div>
-          </div>
-          <div class="box-four box-twoclear">
-            <div class="element">
-              Gumiátváltó
-            </div>
-            <div class="element">
-              Gumiátváltó leírása
-            </div>
-          </div>
-          <div class="box-four">
-            <div class="element">
-              rhgkhjdfhghfdhgdhh
-            </div>
-            <div class="element">
-              linkgyűjtemény és hash tool.
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- -BOX FOUR END-->
-    </div>
     <div class="blue-line">
       <!-- +BOX THREE-->
       <div class="box">
         <div class="container">
           <div class="box-three">
             <div class="element element-padding-small">
-              <div class="box-title">Röplabda Akadémia</div>
+              <div class="box-title"><?php __('ReferenceRoakTitle'); ?></div>
               <div class="clear"></div>
               <span class="boxtext-medium">
-                Kaposvári Röplabda Akadémia Utánpótlás UMSE hivatalos honlapja<br />
+                <?php __('ReferenceRoakText'); ?><br />
                 <a href="http://www.roplabdaakademia.hu" class="blue-line-link" target="_blank">
                   www.roplabdaakademia.hu
                 </a>
@@ -60,10 +19,10 @@
           </div>
           <div class="box-three">
             <div class="element element-padding-small">
-              <div class="box-title">Kislaki Lovarda</div>
+              <div class="box-title"><?php __('ReferenceVikiTitle'); ?></div>
               <div class="clear"></div>
               <span class="boxtext-medium">
-                Viktória Lovasudvar Kaposvár - Zselickislak<br />
+                <?php __('ReferenceVikiText'); ?><br />
                 <a href="http://www.kislakilovarda.fw.hu" class="blue-line-link" target="_blank">
                   www.kislakilovarda.fw.hu
                 </a>
@@ -75,10 +34,10 @@
           </div>
           <div class="box-three">
             <div class="element element-padding-small">
-              <div class="box-title">Fino Kaposvár</div>
+              <div class="box-title"><?php __('ReferenceFinoTitle'); ?></div>
               <div class="clear"></div>
               <span class="boxtext-medium">
-                Fino Kaposvár Férfi Röplabdacsapat hivatalos honlapja<br />
+                <?php __('ReferenceFinoText'); ?><br />
                 <a href="http://www.kaposvarvolley.hu" class="blue-line-link" target="_blank">
                   www.kaposvarvolley.hu
                 </a>
@@ -98,7 +57,7 @@
     <div class="green-line">
       <!-- +BOX TWO + FOUR-->
       <div class="box">
-      <span class="green-title">Fejlesztői nullpont</span><br /><br />
+      <span class="green-title"><?php __('DeveloperNullPoint'); ?></span><br /><br />
       <div id="hash-result">&nbsp;</div>  
         <div class="container">
           <div class="box-two">
@@ -109,12 +68,12 @@
                   <input type="text" name="hash" class="hash-input" value="" maxlength="50" placeholder="karakterek..." />
                   <br /><br />
                   <select name="type">
-                    <option value="string" selected>Szöveget szeretnék hashre kódolni</option>
-                    <option value="md5">md5 kódot fejtenék vissza</option>
-                    <option value="sha1">sha1 kódot fejtenék vissza</option>
+                    <option value="string" selected><?php __('HasEncodeString'); ?></option>
+                    <option value="md5"><?php __('HasEncodeMD5'); ?></option>
+                    <option value="sha1"><?php __('HasEncodeSHA1'); ?></option>
                   </select>
                   <br /><br />
-                  <input type="submit" name="hashsubmit" class="hash-button" value="hash kódolás/dekódolás" />
+                  <input type="submit" name="hashsubmit" class="hash-button" value="<?php __('HasEncodeButtonText'); ?>" />
                 </div> 
               </div> 
             </div>
@@ -150,7 +109,7 @@
                 G Analytics
               </a><br />
               <a href="https://www.google.com/webmasters/tools/" class="blue-line-link" target="_blank">
-                G Webmester eszközök
+                <?php __('GoogleWebmasterTools'); ?>
               </a><br />
               <a href="https://www.google.com/adsense/" class="blue-line-link" target="_blank">
                 G Adsense
@@ -184,7 +143,7 @@
               <br />APP
             </div>
             <div class="element">
-              <a href="/timestamp" class="blue-line-link">
+              <a href="/<?php __('timestamp'); ?>" class="blue-line-link">
                 TimeStamp Encoder/Decoder
               </a><br />
             </div>
@@ -214,7 +173,7 @@
                       <div class="element">
                         <a href="http://www.mantisbt.org/" class="subtwo-link" target="_blank">
                           <img class="footer-small-icons" src="style/icons/gray/16x16/link.png" />&nbsp;
-                          hivatalos Mantis BT
+                          <?php __('MantisBtURL'); ?>
                         </a>
                       </div>
                     </div>
@@ -235,13 +194,13 @@
           <div class="box-two box-twoclear">
             <div class="element element-padding">
               <img class="footer-small-icons" src="style/img/gray_contact.png" />
-              <div class="box-title">Papír mentes iroda - Kapcsolat</div>
+              <div class="box-title"><?php __('MessageFormTitle'); ?></div>
               <div class="clear"></div>
               <span class="boxtext">
                 <?php __('ConnectContentText') ?>
-                <a href="http://www.mantisbt.org/" class="subtwo-link" target="_blank">
+                <a href="/<?php __('connect'); ?>" class="subtwo-link">
                   <img class="footer-small-icons" src="style/icons/gray/16x16/email.png" />&nbsp;
-                  Üzenetet írok!
+                  <?php __('MessageWrite'); ?>
                 </a>
               </span>
             </div>
