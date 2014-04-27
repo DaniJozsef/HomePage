@@ -1,4 +1,4 @@
 HomePage
 ========
 
-dajo.hu HomePage repository point
+dajo HomePage repository point

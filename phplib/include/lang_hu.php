@@ -53,5 +53,12 @@ $Lang = array(
   'Sec' => 'Másodperc',
   'TimestampDecode' => 'Átalakítás dátummá',
   'TimestampEncode' => 'Átalakítás időbélyeggé',
+  'BissextileThis' => 'Szökőév',
+  'BissextileYes' => 'Igen, ez szökőév',
+  'BissextileNo' => 'Nem, ez nem szökőév',
+  'BissextileTooltipLat' => 'annus bissextilis',
+  'BissextileTooltip' => 'Annus bissextilis: Minden néggyel osztható év, kivéve a százzal is oszthatókat. Szökőévek viszont a 400-zal osztható évek.',
+  'TimestampDecoder' => 'Timestamp Decoder',
+  'TimestampEncoder' => 'Timestamp Encoder',
 );
 ?>

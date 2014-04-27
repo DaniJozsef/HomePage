@@ -19,20 +19,14 @@
             </div>
           </div>
           <div class="box-four">
-            <div class="element">
-              <b><?php __('IPAddress'); ?>:</b>
+            <div class="element ">
+              <div class="tooltip" title="<?php __('BissextileTooltip'); ?>">
+                <img class="footer-small-icons" src="style/icons/gray/16x16/help_icon.gif" />
+                <b><?php echo date('Y') . ' ' . __('BissextileThis', TRUE); ?>:</b>
+              </div>
             </div>
             <div class="element">
-              <?php echo GetIP(); ?>
-            </div>
-            <div class="element">
-              <b><?php __('DeviceDetect'); ?>:</b>
-            </div>
-            <div class="element">
-              <?php
-                $MobileDetect = new Mobile_Detect;
-                echo ($MobileDetect->isMobile() ? ($MobileDetect->isTablet() ? $Lang['MobileTablet'] : $Lang['MobilePhone']) : $Lang['MobileComputer']);
-              ?>
+              <div id="bissextile"></div>
             </div>
             <div class="element">
               <b><?php __('OS'); ?>:</b>
@@ -52,6 +46,18 @@
                 $BrowserIcon = file_exists($BrowserImage) ? $GetBrowser["Name"] : 'traveler';
                 $BrowserIcon = '<img width="16" src="/style/img/' . $BrowserIcon . '.png" border="0" />';
                 echo $BrowserIcon. ' ' . $GetBrowser["Name"] . '<br /><b>' . __('Version', TRUE) . ':</b> ' . $GetBrowser["Version"];
+              ?>
+            </div>
+            <div class="element">
+              <b><?php __('IPAddress'); ?>: </b><?php echo GetIP(); ?>
+            </div>
+            <div class="element">
+              <b><?php __('DeviceDetect'); ?>:</b>
+            </div>
+            <div class="element">
+              <?php
+                $MobileDetect = new Mobile_Detect;
+                echo ($MobileDetect->isMobile() ? ($MobileDetect->isTablet() ? $Lang['MobileTablet'] : $Lang['MobilePhone']) : $Lang['MobileComputer']);
               ?>
             </div>
           </div>

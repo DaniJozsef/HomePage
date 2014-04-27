@@ -28,6 +28,8 @@ LANG_MESSAGEFORM_ERROR_NAME_LEN = 'Névhez legalább két karaktert várok!<br /
 LANG_MESSAGEFORM_ERROR_TEXT_LEN = 'Üzenetnek legalább 10 karaktert várok!<br />';
 LANG_MESSAGEFORM_ERROR_NOCAPTCHA = 'Nem adott meg ellenőrző kódot<br />';
 LANG_NAMEDAY = 'napja';
+LANG_BISSEXTILEYES = 'Igen, ez szökőév';
+LANG_BISSEXTILENO = 'Nem, ez nem szökőév';
 
 var LANG_NAMEDAYARRAY = function(Year, Month, Day){
   if (Month == 1){
@@ -39,20 +41,21 @@ var LANG_NAMEDAYARRAY = function(Year, Month, Day){
     "Angelika","Károly, Karola","Adél","Martina, Gerda","Marcella","");
   }
   if (Month == 2){
-    if ((Year != 2000) && (Year != 2004) && (Year != 1996)){
+    if (bissextile()){
       var Days = new initArray("Ignác","Karolina, Aida","Balázs","Ráhel, Csenge","Ágota, Ingrid",
       "Dorottya, Dóra","Tódor, Rómeó","Aranka","Abigél, Alex","Elvira",
       "Bertold, Marietta","Lívia, Lídia","Ella, Linda","Bálint, Valentin",
       "Kolos, Georgina","Julianna, Lilla","Donát","Bernadett","Zsuzsanna",
       "Aladár, Álmos","Eleonóra","Gerzson","Alfréd",
-      "Mátyás","Géza","Edina","Ákos, Bátor","Elemér","",""); 
+      "Szökőnap",
+      "Mátyás","Géza","Edina","Ákos, Bátor","Elemér","","");
     }else{
       var Days = new initArray("Ignác","Karolina, Aida","Balázs","Ráhel, Csenge","Ágota, Ingrid",
       "Dorottya, Dóra","Tódor, Rómeó","Aranka","Abigél, Alex","Elvira",
       "Bertold, Marietta","Lívia, Lídia","Ella, Linda","Bálint, Valentin",
       "Kolos, Georgina","Julianna, Lilla","Donát","Bernadett","Zsuzsanna",
       "Aladár, Álmos","Eleonóra","Gerzson","Alfréd",
-      "Szokonap","Mátyás","Géza","Edina","Ákos, Bátor","Elemér","","");
+      "Mátyás","Géza","Edina","Ákos, Bátor","Elemér","",""); 
     }
   }
   if (Month == 3){ 

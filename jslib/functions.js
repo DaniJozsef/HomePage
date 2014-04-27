@@ -109,3 +109,18 @@ var initArray = function() {
   this[i+1] = initArray.arguments[i]
 }
 
+var bissextile = function(date){
+  var year4_100_400 = false;
+  date = date ? new Date(date) : new Date;
+  if(date.getFullYear() % 4 == 0){
+    year4_100_400 = true;
+  }
+  if(date.getFullYear() % 4 == 0 && date % 100 == 0){
+    year4_100_400 = false;
+  }
+  if(date.getFullYear() % 4 == 0 && date % 400 == 0){
+    year4_100_400 = true;
+  }
+  return year4_100_400;
+}
+

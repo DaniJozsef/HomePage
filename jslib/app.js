@@ -1,5 +1,8 @@
 $(function() {
   
+  if($('.tooltip')){
+    $('.tooltip').tooltipster();
+  }
   //LOCAL DATE
   date = new Date;
   if($("#LocalTimeZone")){
@@ -11,6 +14,9 @@ $(function() {
   }
   if($("#NameDay")){
     $("#NameDay").html(dateFormat("nameDay") + ' ' + LANG_NAMEDAY);
+  }
+  if($("#bissextile")){
+    $("#bissextile").html(bissextile() ? LANG_BISSEXTILEYES : LANG_BISSEXTILENO);
   }
   
   //FANCYBOX WINDOW

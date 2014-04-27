@@ -1,6 +1,7 @@
     <div class="white-line">
       <!-- +BOX THREE-->
       <div class="box">
+        <span class="green-title"><?php __('TimestampDecoder'); ?></span><br /><br />
         <div class="container">
           <div class="box-three">
             <input type="textbox" class="tstamp-input" value="<?php echo time(); ?>" name="tstamp" />
@@ -18,6 +19,7 @@
 
     <div class="blue-line">
       <div class="box">
+        <span class="green-title"><?php __('TimestampEncoder'); ?></span><br /><br />
         <div class="container">
           <div class="box-six">
             <div class="element">
