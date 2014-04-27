@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.84">
+
+	<url>
+		<loc>http://dajo.hu/</loc>
+		<priority>0.8</priority>
+		<changefreq>daily</changefreq>
+		<lastmod>2014-04-27T14:10:58Z</lastmod>
+	</url>
+  
+  <url>
+		<loc>http://dajo.hu/gumimeret</loc>
+		<priority>0.8</priority>
+		<changefreq>daily</changefreq>
+		<lastmod>2014-04-27T14:10:58Z</lastmod>
+	</url>
+
+	<url>
+		<loc>http://dajo.hu/tiresize</loc>
+		<priority>0.8</priority>
+		<changefreq>daily</changefreq>
+		<lastmod>2014-04-27T14:10:55Z</lastmod>
+	</url>
+
+	<url>
+		<loc>http://dajo.hu/idobelyegkonverter</loc>
+		<priority>0.8</priority>
+		<changefreq>daily</changefreq>
+		<lastmod>2014-04-27T14:10:55Z</lastmod>
+	</url>
+
+	<url>
+		<loc>http://dajo.hu/timestamp</loc>
+		<priority>0.8</priority>
+		<changefreq>daily</changefreq>
+		<lastmod>2014-04-27T14:10:55Z</lastmod>
+	</url>
+  
+</urlset>
