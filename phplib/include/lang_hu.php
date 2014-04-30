@@ -79,5 +79,10 @@ $Lang = array(
   'TimestampDecoder' => 'Timestamp Decoder',
   'TimestampEncoder' => 'Timestamp Encoder',
   'NumberFailed' => 'Kérem adjon meg értelmezhető számot',
+  'OriginalTireSizeTitle' => 'Eredeti gumi mérete',
+  'NewTireSizeTitle' => 'Használni kívánt gumi mérete',
+  'WidthTiresize' => 'Gumi szélessége',
+  'HeightTiresize' => 'Gumi magassága',
+  'ColTiresize' => 'Felni átmérője',
 );
 ?>

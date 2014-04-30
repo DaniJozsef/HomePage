@@ -320,5 +320,64 @@ $(function() {
       });
     }
   });
+  
+  //GUMIMÉRET ÁTVÁLTÓ
+  $("select[name='originalTireSize-width'], select[name='newTireSize-width']," +
+  	"select[name='originalTireSize-height'], select[name='newTireSize-height']," +
+  	"select[name='originalTireSize-col'], select[name='newTireSize-col']").change(function (){
+    $("#originTireFullsize").html(
+      $("select[name='originalTireSize-width']").val() + '/' + $("select[name='originalTireSize-height']").val() + ' R' + $("select[name='originalTireSize-col']").val()
+    );
+    $("#newTireFullsize").html(
+      $("select[name='newTireSize-width']").val() + '/' + $("select[name='newTireSize-height']").val() + ' R' + $("select[name='newTireSize-col']").val()
+    );
+    TrireCalc();
+  });
+    
+  var TrireCalc = function() {
+    originalTireSizeWidth = $("select[name='originalTireSize-width']").val();
+    newTireSizeWidth = $("select[name='newTireSize-width']").val();
+    originalTireSizeHeight = $("select[name='originalTireSize-height']").val();
+    newTireSizeHeight = $("select[name='newTireSize-height']").val();
+    originalTireSizeCol = $("select[name='originalTireSize-col']").val();
+    newTireSizeCol = $("select[name='newTireSize-col']").val();
+    
+    if(originalTireSizeWidth && originalTireSizeHeight && originalTireSizeCol &&
+       newTireSizeWidth && newTireSizeHeight && newTireSizeCol) {
+      var originTire, newTire, sizeDiff, differentTiresize, differentTiresize2, sign, Percent;
+      originTire = originalTireSizeCol*25.4+2*(originalTireSizeHeight*(originalTireSizeWidth/100));
+      newTire = newTireSizeCol*25.4+2*(newTireSizeHeight*(newTireSizeWidth/100));    
+      var goodDiff = (originTire*3)/100, //elfogadható differencia
+          sizeDiff = (newTire-originTire);
+    
+      if (Math.abs(sizeDiff) > goodDiff) {
+        $("#matchTireDiameter").removeClass("hash-result-line-success");
+        $("#matchTireDiameter").addClass("hash-result-line-failed");
+        var includeDiffComment = LANG_DIFF_COMMENT_BADDIFF;
+      } else {
+        $("#matchTireDiameter").addClass("hash-result-line-success");
+        $("#matchTireDiameter").removeClass("hash-result-line-failed");
+        var includeDiffComment = LANG_DIFF_COMMENT_GOODDIFF;
+      }
+      
+      if(originTire == null && newTire == null) {
+        differentTiresize = 0 + 'mm';
+        differentTiresize2 = 0 + 'km/h';
+      }
+      else {
+        sign = (sizeDiff>0) ? '+' : '';
+        differentTiresize = sizeDiff;  
+        Percent = (sizeDiff*100)/originTire;
+        differentTiresize2 = (100-Percent);
+      }
+      includeDiffComment = (originTire == newTire) ? LANG_DIFF_COMMENT_EXCELLENTDIFF : includeDiffComment;
+      var carSpeedComment = LANG_MATCH_TIRE_SPEED_COMMENT.replace('%SPEED%', String(Math.round(differentTiresize2)) + 'km/h');   
+      $("#matchTireDiameter").html(includeDiffComment + '<br />' + sign + String(Math.round(differentTiresize)) + 'mm (' + String(Math.round(Percent)) + '%)');
+      $("#matchTireSpeed").html(carSpeedComment);
+      $("#originalTireSize-Diameter").html(LANG_DIAMETER + ': ' + String(Math.round(originTire)) + 'mm');
+      $("#newTireSize-Diameter").html(LANG_DIAMETER + ': ' + String(Math.round(newTire)) + 'mm');
+      $("#originalTireSize-Diameter, #newTireSize-Diameter, #matchTireDiameter, #matchTireSpeed").show();
+    }
+  };
     
 })

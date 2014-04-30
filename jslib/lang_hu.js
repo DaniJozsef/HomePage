@@ -31,6 +31,11 @@ LANG_NAMEDAY = 'napja';
 LANG_BISSEXTILEYES = 'Igen, ez szökőév';
 LANG_BISSEXTILENO = 'Nem, ez nem szökőév';
 LANG_TIMESTAMP_NUM_REQUIRED = 'Kérem adjon meg értelmezhető számot';
+LANG_DIFF_COMMENT_BADDIFF = 'Nem megfelelő váltóméret, használata nem javasolt!';
+LANG_DIFF_COMMENT_GOODDIFF = 'Elfogadható különbség!';
+LANG_DIFF_COMMENT_EXCELLENTDIFF = 'Nincs különbség!';
+LANG_DIAMETER = 'Átmérő';
+LANG_MATCH_TIRE_SPEED_COMMENT = 'Ezzel a váltómérettel a gépkocsi kilométer órája %SPEED%-t fog mutatni 100km/h valós sebességnél!';
 
 var LANG_NAMEDAYARRAY = function(Year, Month, Day){
   if (Month == 1){
