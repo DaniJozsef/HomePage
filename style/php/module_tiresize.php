@@ -64,8 +64,7 @@
             <div class="element">
               <div id="matchTireDiameter" style="display: none;"></div>
               <div id="matchTireSpeed" style="display: none;"></div>
-              jsfgsjk jjsfj sdgfdsgjk jksdjdsf  dsfsdjkgfdsgfdgfd gsf dsgdssg
-              jsfgsjk jjsfj sdgfdsgjk jksdjdsf  dsfsdjkgfdsgfdgfd gsf dsgdssg
+                <img src="/style/img/tyre_help.png" border="0" width="100%" />
             </div>
           </div>
         </form>
