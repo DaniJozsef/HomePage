@@ -19,15 +19,13 @@
         <div class="four">
           <div class="element">
             <img class="footer-small-icons" src="style/icons/gray/16x16/config.png" />
-            Eszközök
+            APP
           </div>
           <div class="element">
-            <img class="footer-small-icons" src="style/icons/gray/16x16/comment.png" />
-            Blog
+            <a href="/<?php __('tiresize'); ?>"><?php __('TyrePageTitle'); ?></a>
           </div>
           <div class="element">
-            <img class="footer-small-icons" src="style/icons/gray/16x16/milestone.png" />
-            Oldaltérkép
+            <a href="/<?php __('timestamp'); ?>">TimeStamp Encoder/Decoder</a>
           </div>
         </div>
         <div class="four">

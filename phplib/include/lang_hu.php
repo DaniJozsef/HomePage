@@ -84,5 +84,69 @@ $Lang = array(
   'WidthTiresize' => 'Gumi szélessége',
   'HeightTiresize' => 'Gumi magassága',
   'ColTiresize' => 'Felni átmérője',
+  'TyreDescriptionTitle' => 'Jelölések a gumiabroncson',
+  'TyreDescription' => '
+165/70 R14, ahol<br />
+<b>165:</b> az abroncs szélessége mm-ben><br />
+<b>70:</b> a gumi szélességének és oldalfal-magasságának aránya %-ban<br />
+<b>R:</b> radiál szerkezetű abroncs<br />
+<b>14:</b> a felni átmérője col-ban ( 1 col = 25,4 mm)<br /><br />
+<b><i>Súly index, vagy terhelési index (LI) 109:</i></b> A maximális terhelhetőséget jelző szám (súly- vagy terhelési index; egy kerékre vonatkozik)<br />
+<b><i>Gumiabroncs gyártási ideje (DOT  0104):</i></b><br />
+A dOT felirat utáni négyjegyű szám első két jegye a gyártási hetet jelöli, a második két szám a gyártási év utolsó 2 jegyét mutatja. A példában szereplő gumit (DOT 0104)  a 2004. év 1. hetében gyártották (2014. január. 1 és január 5-e között)<br />
+(DOT: Department of Transportation, amerikai szabványnak is megfelelő)<br /><br />
+<b><i>XL (Extra Load) vagy RF (Reinforced):</i></b> erősített oldalfalú abroncs; terhelhetősége nagyobb, mint a vele azonos méretű normál kivitelezésű abroncsoké. <br />
+<b><i>TWI:</i></b>  a kopásjelzők helye<br />
+<b><i>TL (Tubeless):</i></b> tömlő nélküli abroncs<br />
+<b><i>M+S:</i></b> téli gumikon;  jelentése sár+hó (mud & snow)<br />
+<b><i>All season, all weather:</i></b> 4 évszakos abroncs<br />
+<b><i>Rotation feliratú nyíl:</i></b> kötött forgásirány<br />
+<b><i>Inside, innensite felirat:</i></b> asszimetrikus abroncsok belső oldala<br />
+<b><i>Outside, aussensite felirat:</i></b> asszimetrikus abroncsok külső oldala<br /><br />
+<b><i>Sebességindex (SI) V:</i></b> A maximálisan megengedett sebességet jelzi ez a betű (táblázat alább)<br />
+    ',
+  'TyreWeightIndex1' => '
+<b>A1:</b> 5 km/h<br />
+<b>A2:</b> 10 km/h<br />
+<b>A3:</b> 15 km/h<br />
+<b>A4:</b> 20 km/h<br />
+<b>A5:</b> 25 km/h<br />
+    ',
+  'TyreWeightIndex2' => '
+<b>A6:</b> 30 km/h<br />
+<b>A7:</b> 35 km/h<br />
+<b>A8:</b> 40 km/h<br />
+<b>B:</b> 50 km/h<br />
+<b>C:</b> 60 km/h<br />
+    ',
+  'TyreWeightIndex3' => '
+<b>D:</b> 65 km/h<br />
+<b>E:</b> 70 km/h<br />
+<b>F:</b> 80 km/h<br />
+<b>G:</b> 90 km/h<br />
+<b>J:</b> 100 km/h<br />
+    ',
+  'TyreWeightIndex4' => '
+<b>K:</b> 110 km/h<br />
+<b>L:</b> 120 km/h<br />
+<b>M:</b> 130 km/h<br />
+<b>N:</b> 140 km/h<br />
+<b>P:</b> 150 km/h<br />
+    ',
+  'TyreWeightIndex5' => '
+<b>Q:</b> 160 km/h<br />
+<b>R:</b> 170 km/h<br />
+<b>S:</b> 180 km/h<br />
+<b>T:</b> 190 km/h<br />
+<b>U:</b> 200 km/h<br />
+    ',
+  'TyreWeightIndex6' => '
+<b>H:</b> 210 km/h<br />
+<b>V:</b> 240 km/h<br />
+<b>W:</b> 270 km/h<br />
+<b>Y:</b> 300 km/h<br />
+<b>Z:</b> 240 km/h fölött<br />
+    ',
+  'TyrePageTitle' => 'Gumiméret átváltó',
 );
 ?>
