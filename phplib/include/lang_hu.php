@@ -87,7 +87,7 @@ $Lang = array(
   'TyreDescriptionTitle' => 'Jelölések a gumiabroncson',
   'TyreDescription' => '
 165/70 R14, ahol<br />
-<b>165:</b> az abroncs szélessége mm-ben><br />
+<b>165:</b> az abroncs szélessége mm-ben<br />
 <b>70:</b> a gumi szélességének és oldalfal-magasságának aránya %-ban<br />
 <b>R:</b> radiál szerkezetű abroncs<br />
 <b>14:</b> a felni átmérője col-ban (1 col = 25,4 mm)<br /><br />
