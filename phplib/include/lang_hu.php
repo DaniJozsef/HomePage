@@ -90,7 +90,7 @@ $Lang = array(
 <b>165:</b> az abroncs szélessége mm-ben><br />
 <b>70:</b> a gumi szélességének és oldalfal-magasságának aránya %-ban<br />
 <b>R:</b> radiál szerkezetű abroncs<br />
-<b>14:</b> a felni átmérője col-ban ( 1 col = 25,4 mm)<br /><br />
+<b>14:</b> a felni átmérője col-ban (1 col = 25,4 mm)<br /><br />
 <b><i>Súly index, vagy terhelési index (LI) 109:</i></b> A maximális terhelhetőséget jelző szám (súly- vagy terhelési index; egy kerékre vonatkozik)<br />
 <b><i>Gumiabroncs gyártási ideje (DOT  0104):</i></b><br />
 A dOT felirat utáni négyjegyű szám első két jegye a gyártási hetet jelöli, a második két szám a gyártási év utolsó 2 jegyét mutatja. A példában szereplő gumit (DOT 0104)  a 2004. év 1. hetében gyártották (2014. január. 1 és január 5-e között)<br />
