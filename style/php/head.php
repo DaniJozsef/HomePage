@@ -14,6 +14,7 @@
     <script type="text/javascript" language="javascript" src="/jslib/app.js"></script>
     <script type="text/javascript" language="javascript" src="/jslib/jquery.fancybox.js?v=2.1.5"></script>
     <script type="text/javascript" language="javascript" src="/jslib/jquery.tooltipster.min.js?v=3.2.1"></script>
+    <script type="text/javascript" language="javascript" src="/jslib/responsiveslides.min.js"></script>
     <title>.:DAJO.HU:.</title>
   </head>
   <body>
