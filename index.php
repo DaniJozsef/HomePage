@@ -19,6 +19,7 @@ foreach($Lang as $LangKey => $LangValue){
 if(!$pages || $pages[0] == ""){
   include ('style/php/page_index.php');
 }else if(!@include ('style/php/page_' . $pages[0] . '.php')){
+  header("HTTP/1.0 404 Not Found");
   include ('style/php/page_404.php');
 }
 

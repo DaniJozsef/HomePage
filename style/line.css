@@ -25,6 +25,20 @@
   padding: 12px 0;
 }
 
+.black-line {
+  width: 100%;
+  background: rgb(10,10,10);
+  background-image: url('img/footer_bg.png');
+  color: rgb(245,245,245);
+  border: 0;
+  border-top:  1px solid #d0d0d0;
+  border-bottom: 1px solid #111111;
+  -webkit-box-shadow: inset 0px 40px 90px rgba(60,60,60, 0.3);
+  -moz-box-shadow: inset 0px 40px 90px rgba(60,60,60, 0.3);
+  box-shadow: inset 0px 40px 90px rgba(60,60,60, 0.3);
+  padding: 12px 0;
+}
+
 .blue-line {
   width: 100%;
   background: rgb(152,219,250);

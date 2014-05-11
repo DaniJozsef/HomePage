@@ -148,5 +148,7 @@ A dOT felirat utáni négyjegyű szám első két jegye a gyártási hetet jelö
 <b>Z:</b> 240 km/h fölött<br />
     ',
   'TyrePageTitle' => 'Gumiméret átváltó',
+  'Error404Title' => 'Hiba 404!',
+  'Error404Description' => 'A kért oldal nem található!<br />Namostan vagy el vagyon gépelve az URL, vagy a motyó amit keresel tényleg nem létezik minálunk!<br />',
 );
 ?>

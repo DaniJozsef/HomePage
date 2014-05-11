@@ -30,6 +30,16 @@
   margin: auto;
 }
 
+.black-line .box .container{
+  text-shadow: 0px 1px 0px rgba(200,200,200, 0.6);
+  text-align: left;
+  max-width: 900px;
+  min-width: 500px;
+  color: rgb(245,245,245);
+  display: block;
+  margin: auto;
+}
+
 .box .container .element{
   border: 0px solid #c0c0c0;
   display: block;
@@ -126,6 +136,12 @@
   -ms-transition: color 0.5s ease;
   -o-transition: color 0.5s ease;
   transition: color 0.5s ease;
+}
+
+.error404{
+  font-size: 28px;
+  color: rgb(200,200,200);
+  text-shadow: 0px 1px 0px rgba(1,1,1, 0.9);
 }
 
 @media only screen and (max-width: 700px) {

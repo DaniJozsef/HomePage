@@ -52,7 +52,7 @@
         <div class="container content-form-line">
           <div class="element element-form-line">
             <?php __('Message') ?><span class="require">*</span>:
-            <textarea name="text">text</textarea>
+            <textarea name="text"></textarea>
             <div class="clear"></div>
           </div>
         </div>
