@@ -13,8 +13,8 @@ if($_POST){
     $GP[$PostKey] = $PostValue;
   }
 }
-if($_GET){
-  foreach($_GET as $GetKey => $GetValue){
+if($GP){
+  foreach($GP as $GetKey => $GetValue){
     $GP[$GetKey] = $GetValue;
   }
 }

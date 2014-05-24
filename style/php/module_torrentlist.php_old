@@ -1,0 +1,99 @@
+<?php
+$RootDir = './../torrent/';
+$Startdir = $GP['dir'] ? $GP['dir'] : $RootDir;
+
+$DirException = Array(
+	'index.php', 'index.php3', 'index.phtml', 'index.html', 'index.htm', 'readme', 'readme.txt'
+);
+
+if($OpenDir = opendir($Startdir)) {
+  $Dirs = array();
+  $DirCount = str_replace("Resource id #", "", $OpenDir);
+  while (FALSE !== ($DirName = readdir($OpenDir))){
+    if ($DirName != "." && $DirName != ".." && !in_array($DirName, $DirException) && substr($DirName, 0, 1) != '.'){
+      $Type = (filetype($Startdir.$DirName) == "dir") ? __('FileTypeDir', true) : __('FileTypeFile', true);
+      $DType = (filetype($Startdir.$DirName) == "dir") ? 'dir' : 'file';
+      if(strlen($DirName)>43) {
+        $OutDirName = substr($DirName, 0, 40) . '...';
+      }else{
+        $OutDirName = $DirName;
+      }
+      
+      $Dirs[] = array (
+      	$OutDirName,
+        GetFileSize($Startdir.$OutDirName),
+        $Type,
+        str_replace('./../', '' , $Startdir.$OutDirName),
+        GetFileDate($Startdir.$OutDirName),
+        $DType,
+        $Startdir.$DirName
+      );
+    }
+  }
+  closedir($Startdir);
+}else{
+  $Dirs = FALSE;
+}
+
+function GetFileSize($File){
+  if(($Filesize = filesize($File)/1024/1024/1024) > 1){
+    return round($Filesize) . 'GB';
+  }else if(($Filesize = filesize($File)/1024/1024) > 1){
+    return round($Filesize) . 'MB';
+  }else if(($Filesize = filesize($File)/1024) > 1){
+    return round($Filesize) . 'KB';
+  }else{
+    return round(filesize($File)) . 'B';
+  }
+}
+
+function GetFileDate($File){
+  global $Language;
+  return date (($Language == 'hu') ? ISO_DATETIME : ISO_DATETIME2, filemtime($File));
+}
+
+$Rownum = 1;
+if($Dirs){
+  if($RootDir != $Startdir){
+    $dirnames = split('/', strip_tags($Startdir));
+    for($di=0; $di<sizeof($dirnames); $di++) {
+      if($di<(sizeof($dirnames)-1)) {
+        $DotDotDir = $DotDotDir . $dirnames[$di] . '/';
+      }
+    }
+    echo '<a href="?dir=' . $DotDotDir . '"><img src="/style/icons/filetype-16x16/dir.png" border="0" /></a>..</div>';
+  }
+  foreach($Dirs as $DirData){
+    if($DirData[5]== 'dir'){
+      $TooltipText = '&lt;b&gt;' . __('FileSize', true) . ': &lt;/b&gt;' . $DirData[1] . ' ('. $DirData[2] .') &lt;br /&gt;';
+      $TooltipText .= '&lt;b&gt;' . __('FileDate', true) . ': &lt;/b&gt;' . $DirData[4] . ' &lt;br /&gt;';
+      $TooltipText .= '&lt;b&gt;' . __('FileSource', true) . ': &lt;/b&gt;' . $DirData[3];
+      echo '<div class="torrentlist'  .$Rownum . '">';
+      echo '<div class="tooltip" title="' . $TooltipText . '">';
+      echo '<a href="?dir=' . $DirData[6] . '"><img src="/style/icons/filetype-16x16/dir.png" border="0" /></a>' . $DirData[0] . '</div>';
+      echo '</div>';
+      $Rownum = ($Rownum == 1) ? 2 : 1;
+    }
+  }
+  
+  foreach($Dirs as $DirData){
+    if($DirData[5]== 'file'){
+      $FileExtension = str_replace('.', '', strstr(substr($DirData[0],-5), '.'));
+      $FileIcon = '/style/icons/filetype-16x16/' . $FileExtension . '.png';
+      if(!file_get_contents(dirname(__FILE__) . '/../..' . $FileIcon)){
+        $FileIcon = '/style/icons/filetype-16x16/page.png';
+      }
+      $TooltipText = '&lt;b&gt;' . __('FileSize', true) . ': &lt;/b&gt;' . $DirData[1] . ' ('. $DirData[2] .') &lt;br /&gt;';
+      $TooltipText .= '&lt;b&gt;' . __('FileDate', true) . ': &lt;/b&gt;' . $DirData[4] . ' &lt;br /&gt;';
+      $TooltipText .= '&lt;b&gt;' . __('FileSource', true) . ': &lt;/b&gt;' . $DirData[3];
+      echo '<div class="torrentlist'  .$Rownum . '">';
+      echo '<div class="tooltip" title="' . $TooltipText . '">';
+      echo '<img src="' . $FileIcon . '" border="0" />' . $DirData[0] . '</div>';
+      echo '</div>';
+      $Rownum = ($Rownum == 1) ? 2 : 1;
+    }
+  }
+}else{
+  echo "Nothing Directory and File";
+}
+?>

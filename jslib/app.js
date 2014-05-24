@@ -1,7 +1,9 @@
 $(function() {
   
   if($('.tooltip')){
-    $('.tooltip').tooltipster();
+    $('.tooltip').tooltipster({
+       contentAsHTML: true
+    });
   }
   //LOCAL DATE
   date = new Date;
@@ -428,8 +430,18 @@ $(function() {
   //LOGIN & LOGINDATA
   if(USERNAME != ''){
     $("#userdatas_name").html(USERNAME);
+    $("#userdatas_email").html(USEREMAIL);
+    $("#userdatas_lastlog").html(USERLASTLOG);
+    $("#userdatas_logincount").html(USERLOGINCOUNT);
     $('#userdatas').show();
   }
+  
+  $("input[name='user'], input[name='pass']").keypress(function (e) {
+    //logininput enter submit ajax response
+    if (e.which == 13) {
+      $('#loginsubmit').click();
+    }
+  });
   
   if($("#loginsubmit")){
     $("#loginsubmit").click(function(){
@@ -478,6 +490,9 @@ $(function() {
             $('#loginform').hide("slow");
             $.fancybox.close(true);
             $("#userdatas_name").html(datas.username);
+            $("#userdatas_email").html(datas.email);
+            $("#userdatas_lastlog").html(datas.lastlog);
+            $("#userdatas_logincount").html(datas.logincount);
             $('#userdatas').show();
           }
         });

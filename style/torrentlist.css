@@ -1,0 +1,215 @@
+h1 {
+	color: #6699FF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size: medium;
+	margin: 0 0 10px 8px;
+	padding:0;
+}
+
+img {
+	border: 0;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+
+#breadcrumbs {
+	text-shadow: 0px 1px 0px rgba(250,250,250, 0.6);
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(33,66,99);
+	font-size:small;
+	margin: 0 0 8px 8px;
+}
+ 
+#breadcrumbs a:link,
+#breadcrumbs a:active,
+#breadcrumbs a:visited{
+  text-shadow: 0px 1px 0px rgba(250,250,250, 0.6);
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  color: rgb(33,66,99);
+}
+
+#breadcrumbs a:hover{
+  color: rgb(240,70,80);
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+#breadcrumbs a:hover {
+	text-decoration:underline;
+}
+
+#listingcontainer {
+
+}
+
+#listingheader {
+	color: #476BB3;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	text-align:right;
+}
+
+#listingheader a, 
+#listingheader a:active, 
+#listingheader a:visited, 
+#listingheader a:link {
+	text-decoration: none;
+	color: rgb(40,40,40);;
+}
+
+#listingheader a:hover {
+	color: rgb(240,70,80);
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+
+#headerfile {
+	text-align:left;
+	float: left;
+	width: 70%; 
+}
+
+#headersize {
+	text-align:right;
+	width: 5%;
+	float: left;
+}
+
+#listing {
+
+}
+
+#listing a {
+  text-shadow: 0px 1px 0px rgba(252,252,252,0.6);
+	display:block;
+	padding: 2px 5px 2px 5px;
+	font-size:small;
+	color: rgb(80,80,80);
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	text-align:right;
+	
+}
+
+#listing a:hover {
+	background-color:#DBE6FE;
+}
+
+#listing a img {
+	float:left;
+	margin-right: 4px;
+}
+
+
+
+#listing a strong {
+	width: 70%;
+	float:left;
+	cursor:hand;
+	cursor:pointer;
+	text-align:left;
+}
+
+#listing a em {
+	float: left;
+	width: 5%;
+	text-align:right;
+	cursor:hand;
+	cursor:pointer;
+}
+
+#listing a span {
+	position: absolute;
+	margin-left: -151px;
+	margin-top: -2px;
+}
+
+#listing a span img {
+	width: 150px;
+	background-color:#CCCCCC;
+	visibility: hidden;	
+}
+
+#listing a:hover span img {
+	border: 1px solid #666666;
+	visibility: visible;
+}
+
+#upload {
+  text-shadow: 0px 1px 0px rgba(252,252,252,0.6);
+	border: 1px solid rgb(40,40,40);
+	display:block;
+	margin-top: 10px;
+	font-size:small;
+	color: rgb(40,40,40);
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	background-color: rgb(230,230,230);
+}
+
+#uploadtitle {
+	background-color: rgb(215,215,215);
+	padding: 2px 5px 2px 5px;
+	/*border-bottom: 1px solid rgb(40,40,40);*/
+}
+
+#uploadcontent {
+	padding: 2px 5px 2px 5px;
+}
+
+
+#copy {
+	width: 600px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:x-small;
+	color: #666666;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#copy a {
+	text-decoration: underline;
+	color: #666666;
+}
+
+.b {
+	background-color: rgb(242,242,242);
+	
+}
+
+.w {
+	background-color: rgb(252,252,252);
+}
+
+.mod {
+	float:right;
+}
+
+.size {
+	float:right;
+}
+
+.upload-error{
+	padding:2px 0;
+}
+
+.upload-error strong{
+	color:#993333;
+}

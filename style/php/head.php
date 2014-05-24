@@ -40,9 +40,13 @@
       </div>    
     </div>
     <!-- -GOOGLE AD -->
-    <?php } ?>
+    <?php } 
+      $UserData = $_SESSION['userid'] ? GetUserData($_SESSION['userid']) : '';
+    ?>
     
     <script type="text/javascript" language="javascript">
-      USERNAME = '<?php print $_SESSION['username']; ?>';
-    </script> 
-    
+      USERNAME = '<?php print $UserData['username']; ?>';
+      USEREMAIL = '<?php print $UserData['email']; ?>';
+      USERLASTLOG = '<?php print DateFormat($UserData['lastlog_date']); ?>';
+      USERLOGINCOUNT = '<?php print $UserData['logincount']; ?>';
+    </script>     
