@@ -40,5 +40,9 @@
       </div>    
     </div>
     <!-- -GOOGLE AD -->
-    <?php }?>    
+    <?php } ?>
+    
+    <script type="text/javascript" language="javascript">
+      USERNAME = '<?php print $_SESSION['username']; ?>';
+    </script> 
     

@@ -150,5 +150,10 @@ A dOT felirat utáni négyjegyű szám első két jegye a gyártási hetet jelö
   'TyrePageTitle' => 'Gumiméret átváltó',
   'Error404Title' => 'Hiba 404!',
   'Error404Description' => 'A kért oldal nem található!<br />Namostan vagy el vagyon gépelve az URL, vagy a motyó amit keresel tényleg nem létezik minálunk!<br />',
+  'LoginTitle' => 'Belépés',
+  'LoginUsername' => 'Felhasználónév vagy email cím',
+  'LoginPassword' => 'Jelszó',
+  'LoginSubmit' => 'Belépés',
+  'LoginError' => 'Hibás felhasználónév vagy jelszó!',
 );
 ?>

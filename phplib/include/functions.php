@@ -4,7 +4,7 @@
 //require lang_[hu, en, ...].php
 //require class/phpmailer/class.phpmailer.php
 //require class/db.class.php
-
+include ('user_functions.php');
 date_default_timezone_set(TIMEZONE);
 
 $GP = array();

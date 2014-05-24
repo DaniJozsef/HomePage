@@ -67,7 +67,6 @@
                 <img src="/style/img/tyre_help.png" border="0" width="100%" />
             </div>
           </div>
-        </form>
         </div>
       </div>
     </div>

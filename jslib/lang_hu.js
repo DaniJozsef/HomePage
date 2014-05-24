@@ -37,6 +37,9 @@ LANG_DIFF_COMMENT_EXCELLENTDIFF = 'Nincs különbség!';
 LANG_DIAMETER = 'Átmérő';
 LANG_MATCH_TIRE_SPEED_COMMENT = 'Ezzel a váltómérettel a gépkocsi kilométer órája %SPEED%-t fog mutatni 100km/h valós sebességnél!';
 
+LANG_LOGIN_NAME_REQUIRED = 'Felhasználónév vagy email cím megadása kötelező!';
+LANG_LOGIN_PASS_REQUIRED = 'Jelszó megadása kötelező!';
+
 var LANG_NAMEDAYARRAY = function(Year, Month, Day){
   if (Month == 1){
     var Days = new initArray("ÚJÉV, Fruzsina","Ábel","Genovéva, Benjámin","Titusz, Leona",

@@ -16,6 +16,9 @@ include_once dirname(__FILE__).'/../init.php';
         case 'TimestampEncoder':
           print json_encode(TimestampEncoder());
           break;
+        case 'Login':
+          print json_encode(Login());
+          break;
       }
     }
 
@@ -192,5 +195,36 @@ function TimestampEncoder(){
   );
   return $Json;
 }
+
+function Login(){
+  global $DB, $GP, $Lang;
+  $ErrorStatus = 0;
+  $ErrorMessage = '';
+  
+  $Sql="SELECT * FROM " . DB_PREFIX . "users " .
+       "WHERE passwd='" . md5($GP['Pass']) . "' AND " .
+       "(username='" . $GP['User'] . "' OR email='" . $GP['User'] ."')";
+  $UserLoginResult = $DB->query($Sql, "OBJ");
+  if($UserLoginResult['rows']==1){
+    $_SESSION['userid'] = $UserLoginResult['data'][0]->id;
+    $_SESSION['username'] = $UserLoginResult['data'][0]->username;
+    setcookie("AutoLogin", $UserLoginResult['data'][0]->id . '-' . $UserLoginResult['data'][0]->username, time()+(3600*24*7), "/");
+    $Json = array(
+      'userid' => $_SESSION['userid'],
+      'username' => $_SESSION['username'],
+      'ErrorStatus' => $ErrorStatus,
+      'ErrorMessage' => $ErrorMessage
+    );
+  }else{
+    $Json = array(
+      'username' => '',
+      'ErrorStatus' => 1,
+      'ErrorMessage' => $Lang['LoginError']
+    );
+  }
+  
+  return $Json;
+}
+
 
 ?>

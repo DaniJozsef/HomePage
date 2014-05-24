@@ -1,0 +1,70 @@
+/*LOGINFORM*/
+
+ #loginform input{
+  padding: 7px;
+  text-shadow: 0px 1px 0px rgba(252,252,252,0.6);
+	border: 1px solid rgb(210,210,210);
+	background-color: #ffffff;
+  width: 300px;
+  height: 16px;
+  outline: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 16px !important;
+  font-style: italic;
+  color: rgb(80,80,80);
+}
+
+#loginform input:hover{
+	border: 1px solid rgb(180,180,180);
+	background-color: rgb(250,250,250);
+}
+
+#loginform input:focus{
+	border: 1px solid rgb(100,100,100);
+	background-color: rgb(232,232,232);
+}
+
+#loginform .login-button{
+  text-shadow: 0px 1px 0px rgba(252,252,252,0.6);
+	border: 1px solid rgb(210,210,210);
+	background-color: rgb(200,200,200);
+  height: 30px;
+  margin-top: 20px;
+  color: rgb(80,80,80);
+  padding: 5px 30px 5px 30px;
+  font-size: 15px;
+  font-family: "verdana", arial;
+  outline: none; /*Autocomplette border color off*/
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  cursor: hand;
+  cursor: pointer;
+}
+
+#loginform .login-button:hover{
+	border: 1px solid rgb(100,100,100);
+	background-color: rgb(232,232,232);
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -ms-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
+#userdatas{
+  display: none;
+}
+
+@media only screen and (max-width: 430px) {
+  #loginform input{
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  #loginform input{
+    width: 200px;
+  }
+}
