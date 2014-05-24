@@ -208,7 +208,9 @@ function Login(){
   if($UserLoginResult['rows']==1){
     $_SESSION['userid'] = $UserLoginResult['data'][0]->id;
     $_SESSION['username'] = $UserLoginResult['data'][0]->username;
-    setcookie("AutoLogin", $UserLoginResult['data'][0]->id . '-' . $UserLoginResult['data'][0]->username, time()+(3600*24*7), "/");
+    $CookieTime = ($GP['Auto'] == 1) ? time()+(3600*24*7) : time()-3600;
+    setcookie("AutoLogin", $UserLoginResult['data'][0]->id . '-' . $UserLoginResult['data'][0]->username, $CookieTime, "/");
+    
     $Json = array(
       'userid' => $_SESSION['userid'],
       'username' => $_SESSION['username'],

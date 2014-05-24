@@ -451,7 +451,7 @@ $(function() {
           data: { 
             User: NameInput.val(),
             Pass: PassInput.val(),
-            Auto: AutologInput.val()
+            Auto: ((AutologInput.is(":checked")) ? 1 : 0)
           },
           beforeSend: function( xhr ) {
             xhr.overrideMimeType( "text/plain; charset=x-user-defined" );

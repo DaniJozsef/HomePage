@@ -154,6 +154,7 @@ A dOT felirat utáni négyjegyű szám első két jegye a gyártási hetet jelö
   'LoginUsername' => 'Felhasználónév vagy email cím',
   'LoginPassword' => 'Jelszó',
   'LoginSubmit' => 'Belépés',
+  'LoginAuto' => 'Automatikus bejelentkezés 1 hétig: ',
   'LoginError' => 'Hibás felhasználónév vagy jelszó!',
 );
 ?>
